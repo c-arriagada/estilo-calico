@@ -1,0 +1,30 @@
+.nav-bar {
+
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.member-photo {
+    width: 300px;
+    margin: 2%;
+}
+
+.member-bio {
+    display: flex;
+    border: 2px solid rgb(198, 193, 193);
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(135, 131, 131);
+    width: 75%;
+    margin-top: 2em;
+}
+
+.bio {
+    /* margin: 2%; */
+    margin-top: 2em;
+    width: 50%;
+    font-size: 0.9em;
+}

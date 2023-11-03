@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import AboutUs from "./pages/AboutUs"
 import Gallery from "./pages/Gallery"
 import Events from "./pages/Events"
+import './App.css'
 
 const App = () => {
 
