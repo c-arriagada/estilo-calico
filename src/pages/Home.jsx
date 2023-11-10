@@ -1,12 +1,16 @@
 import React from "react";
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+// import logo from '../assets/images/ES_logo.jpg';
 
 function Home() {
     return (
-        <div>
-            <NavBar />
-            <h1>Estilo Calico</h1>
-        </div>
+        <>
+            <div className="home">
+                <NavBar />    
+                <Footer />
+            </div>
+        </>
     )
 }
 

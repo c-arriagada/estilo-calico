@@ -4,13 +4,14 @@ import Amon from "../assets/images/Amon.jpg";
 import Cuixi from "../assets/images/Cuixi.jpg";
 import Harley from "../assets/images/Harley.jpg";
 import Ryan from "../assets/images/Ryan.jpg";
+import Footer from "../components/Footer";
 
 function AboutUs() {
     return (
         <div>
             <NavBar />
             <h1>About Us</h1>
-            <article className="member-bio">
+            <article className="member-bio" id="bio-Amon">
                 <img src={Amon} alt="Amon" className="member-photo" />
                 <div className="bio">
                     <h2>Amon Sahelijo</h2>
@@ -19,7 +20,7 @@ function AboutUs() {
                         In addition to playing, Amon loves to help others begin their musical journey through teaching. Some of his biggest inspirations are Eric Johnson, Jimi Hendrix, and Paco de Lucía.</p>
                 </div>
             </article>
-            <article className="member-bio">
+            <article className="member-bio" id="bio-Cuixi">
                 <img src={Cuixi} alt="Cuixi" className="member-photo" />
                 <div className="bio">
                     <h2>Cuixi Aguilar</h2>
@@ -32,7 +33,7 @@ function AboutUs() {
                         seen it as a tool for social change. He is very passionate about helping students find their voice and is currently doing it through the Intonation Music & School of Rock.</p>
                 </div>
             </article>
-            <article className="member-bio">
+            <article className="member-bio" id="bio-Harley">
                 <img src={Harley} alt="Harley" className="member-photo" />
                 <div className="bio">
                     <h2>Harley Gingras</h2>
@@ -44,7 +45,7 @@ function AboutUs() {
                         He has been teaching music professionally since 2010 to students of all ages, both privately and through Intonation Music Workshop in Chicago, IL, and Top Note Music Academy in Skokie, IL.</p>
                 </div>
             </article>
-            <article className="member-bio">
+            <article className="member-bio" id="bio-Ryan">
                 <img src={Ryan} alt="Ryan" className="member-photo" />
                 <div className="bio">
                     <h2>Ryan Norris</h2>
@@ -54,6 +55,7 @@ function AboutUs() {
                         made music for podcasts, and worked with creatives on the bleeding edge of machine learning.</p>
                 </div>
             </article>
+            {/* <Footer /> */}
         </div>
     )
 }
