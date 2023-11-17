@@ -10,6 +10,7 @@ function AboutUs() {
     return (
         <div>
             <NavBar />
+            <div className="aboutUs">
             <h1>About Us</h1>
             <article className="member-bio" id="bio-Amon">
                 <img src={Amon} alt="Amon" className="member-photo" />
@@ -56,6 +57,7 @@ function AboutUs() {
                 </div>
             </article>
             {/* <Footer /> */}
+            </div>
         </div>
     )
 }

@@ -3,15 +3,18 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: bisque;
+    background-color: rgb(237, 240, 140);
 }
 
 .home {
     background-image: url('./assets/images/ES_logo.jpg');
+    /* background-position: 100% 100%; */
+    background-repeat: no-repeat;
     height: 1080px;
     /* color: green; */
     /* padding: 5px; */
     /* background-color: blue; */
+    /* background-size: contain; */
     background-size: cover;
     /* resizes image to fit screen */
 }
@@ -23,7 +26,7 @@ body {
 } */
 
 h1 {
-    margin-left: 1em;
+    /* margin-left: 1em; */
     color: rgb(37, 34, 34);
 }
 
@@ -105,7 +108,7 @@ li:hover {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
@@ -114,4 +117,8 @@ li:hover {
 
 .copyright {
     margin: 1rem .5rem;
+}
+
+.contact, .events, .music, .aboutUs {
+    margin-left: 2em;
 }

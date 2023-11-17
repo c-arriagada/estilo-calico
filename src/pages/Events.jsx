@@ -3,10 +3,13 @@ import NavBar from "../components/NavBar";
 
 function Events() {
     return (
-        <>
-            <NavBar/>
-            <h1>Events</h1>
-        </>
+        <div>
+            <NavBar />
+            <div className="events">
+                <h1>Events</h1>
+                <p>Stay tuned for upcoming events! Follow us on Instagram for more updates.</p>
+            </div>
+        </div>
     )
 }
 
