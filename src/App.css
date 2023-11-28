@@ -9,7 +9,11 @@ body {
     background-color: rgb(237, 240, 140);
 }
 
-.home, .music, .events, .contact, .aboutUs {
+.home,
+.music,
+.events,
+.contact,
+.aboutUs {
     background-image: url('./assets/images/ES_logo.jpg');
     /* background-position: 100% 100%; */
     background-repeat: no-repeat;
@@ -124,7 +128,10 @@ li:hover {
     margin: 1rem .5rem;
 }
 
-.contact, .events, .music, .aboutUs {
+.contact,
+.events,
+.music,
+.aboutUs {
     /* margin-left: 2em;
     margin-bottom: 2em; */
     display: flex;
@@ -147,4 +154,13 @@ li:hover {
 .songName {
     color: white;
     margin: 3px;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0.5em;
 }
