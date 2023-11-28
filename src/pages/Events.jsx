@@ -7,7 +7,7 @@ function Events() {
             <NavBar />
             <div className="events">
                 <h1>Events</h1>
-                <p>Stay tuned for upcoming events! Follow us on Instagram for more updates.</p>
+                <p>Coming soon...</p>
             </div>
         </div>
     )
