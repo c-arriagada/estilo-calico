@@ -7,7 +7,9 @@ function Events() {
             <NavBar />
             <div className="events">
                 <h1>Events</h1>
-                <p>Coming soon...</p>
+                <section className="event-list">
+                    <h3>Coming soon...</h3>
+                </section>
             </div>
         </div>
     )

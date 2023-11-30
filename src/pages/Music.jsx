@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import VideoCard from "../components/VideoCard";
 
 
-function Gallery() {
+function Music() {
 
     const musicVideos = [
         "https://www.estilocalico.com/Calle.mp4",
@@ -25,16 +25,18 @@ function Gallery() {
             <NavBar />
             <div className="music">
                 <h1>Music</h1>
-                <p>Estilo Calico is a local Chicago band with a mission of making people dance. Rooted from latin american influences,
-                    Estilo Calico transcends into a new wave.
-                </p>
-                {videoComponents}
-                {/* <video width="700px" height="400px" controls >
-                    <source src="https://www.estilocalico.com/Calle.mp4" />
-                </video> */}
+                <div className="music-content">
+                    <p>Estilo Calico is a local Chicago band with a mission of making people dance. Rooted from latin american influences,
+                        Estilo Calico transcends into a new wave.
+                    </p>
+                    {videoComponents}
+                    {/* <video width="700px" height="400px" controls >
+                        <source src="https://www.estilocalico.com/Calle.mp4" />
+                    </video> */}
+                </div>
             </div>
         </>
     )
 }
 
-export default Gallery;
+export default Music;

@@ -3,27 +3,35 @@ html {
 }
 
 body {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     background-color: rgb(237, 240, 140);
 }
 
-.home,
+.home {
+    background-image: url('./assets/images/ES_logo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* height: 1080px; */
+    height: 100vh;
+    background-size: cover;  /* resizes image to fit screen */
+}
+
 .music,
 .events,
 .contact,
 .aboutUs {
     background-image: url('./assets/images/ES_logo.jpg');
-    /* background-position: 100% 100%; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 1080px;
-    /* color: green; */
-    /* padding: 5px; */
-    /* background-color: blue; */
-    /* background-size: contain; */
-    background-size: cover;
-    /* resizes image to fit screen */
+    /* height: 1080px; */
+    height: 100vh;
+    background-size: cover;  /* resizes image to fit screen */
+    /* background-blend-mode: multiply; */
 }
 
 /* .cover-image {
@@ -33,8 +41,12 @@ body {
 } */
 
 h1 {
-    /* margin-left: 1em; */
     color: rgb(37, 34, 34);
+    margin-top: 1em;
+}
+
+h2 {
+    margin-top: 0;
 }
 
 a {
@@ -48,7 +60,8 @@ a {
     /* background-color: rgb(8, 6, 6); */
     width: 100%;
     height: 3em;
-    color: white;
+    background-color: rgb(237, 240, 140);
+    position: relative;
 }
 
 ul {
@@ -81,7 +94,7 @@ li:hover {
 
 .member-bio {
     display: flex;
-    border: 2px solid rgb(198, 193, 193);
+    border: 1px solid rgb(198, 193, 193);
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgb(135, 131, 131);
     width: 75%;
@@ -90,18 +103,21 @@ li:hover {
     background-color: rgb(183, 180, 122);
     max-height: 350px;
     font-size: 14px;
+    text-align: justify;
     opacity: 0.95;
+    padding-left: 0px;
 }
 
 .bio {
     /* margin: 2%; */
     margin-top: 2em;
-    width: 50%;
+    width: 55%;
     font-size: 0.85em;
 }
 
 #bio-Amon {
     background-color: rgb(237, 145, 40);
+    margin-top: 0;
 }
 
 #bio-Cuixi {
@@ -114,6 +130,16 @@ li:hover {
 
 #bio-Ryan {
     background-color: rgb(207, 43, 103);
+    margin-bottom: 2em;
+}
+
+.aboutUs, .music-content {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .footer {
@@ -132,11 +158,10 @@ li:hover {
 .events,
 .music,
 .aboutUs {
-    /* margin-left: 2em;
-    margin-bottom: 2em; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
     /* justify-content: center; */
 }
 
@@ -163,4 +188,32 @@ li:hover {
 
 .icon {
     margin: 0.5em;
+}
+
+.contact-form {
+    background-color: rgb(233, 152, 60);
+    border: 1px solid rgb(198, 193, 193);
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(145, 143, 143);
+    padding: 1em;
+}
+
+.event-list, .music-content {
+    background-color: rgb(233, 152, 60);
+    border: 1px solid rgb(198, 193, 193);
+    border-radius: 5px;
+    /* border-radius: 3px; */
+    box-shadow: 10px 5px 5px rgb(145, 143, 143);
+    opacity: 0.95;
+    margin: 0;
+    width: 75%;
+    height: 90%;
+    text-align: center;
+}
+
+.music-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
