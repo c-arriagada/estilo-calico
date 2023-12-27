@@ -1,5 +1,6 @@
 html {
-    font-family: fantasy;
+    /* font-family: fantasy; */
+    font-family: 'Comic Neue', sans-serif;
 }
 
 body {
@@ -18,7 +19,8 @@ body {
     background-repeat: no-repeat;
     /* height: 1080px; */
     height: 100vh;
-    background-size: cover;  /* resizes image to fit screen */
+    background-size: cover;
+    /* resizes image to fit screen */
 }
 
 .music,
@@ -30,7 +32,8 @@ body {
     background-repeat: no-repeat;
     /* height: 1080px; */
     height: 100vh;
-    background-size: cover;  /* resizes image to fit screen */
+    background-size: cover;
+    /* resizes image to fit screen */
     /* background-blend-mode: multiply; */
 }
 
@@ -102,17 +105,16 @@ li:hover {
     margin-left: 2em;
     background-color: rgb(183, 180, 122);
     max-height: 350px;
-    font-size: 14px;
+    font-size: .9em;
+    /* font-weight: 400; */
     text-align: justify;
     opacity: 0.95;
     padding-left: 0px;
 }
 
 .bio {
-    /* margin: 2%; */
     margin-top: 2em;
-    width: 55%;
-    font-size: 0.85em;
+    width: 60%;
 }
 
 #bio-Amon {
@@ -133,7 +135,8 @@ li:hover {
     margin-bottom: 2em;
 }
 
-.aboutUs, .music-content {
+.aboutUs,
+.music-content {
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -198,7 +201,8 @@ li:hover {
     padding: 1em;
 }
 
-.event-list, .music-content {
+.event-list,
+.music-content {
     background-color: rgb(233, 152, 60);
     border: 1px solid rgb(198, 193, 193);
     border-radius: 5px;
