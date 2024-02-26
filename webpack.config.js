@@ -34,51 +34,16 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource'
-                // use: [
-                //     {
-                //         loader: 'url-loader',
-                //         options: {
-                //             limit: 8192
-                //         }
-                //     }
-                // ]
             },
-            // {
-            //     test: /\.html$/,
-            //     use: {
-            //         loader: 'html-loader',
-            //         options: {
-            //             sources: {
-            //                 list: [
-            //                     {
-            //                         tag: "source",
-            //                         attribute: "src",
-            //                         type: "src"
-            //                     }
-            //                 ]
-            //             }
-            //         }
-            //     }
-            // },
-            // {
-            //     test: /\.(mov|mp4)$/,
-            //     use: [
-            //         {
-            //             loader: 'file-loader',
-            //             options: {
-            //                 name: '[name].[ext]'
-            //             }
-            //         }
-            //     ]
-            // }
         ]
-    },
-    resolve: {
-        extensions: ['.js', '.jsx']
     },
     plugins: [
         new HTMLWebpackPlugin({
             template: './src/index.html'
         })
-    ]
+    ],
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
+    
 }
