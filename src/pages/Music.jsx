@@ -26,7 +26,7 @@ function Music() {
             <div className="music">
                 <h1>Music</h1>
                 <div className="music-content">
-                    <p>Estilo Calico is a local Chicago band with a mission of making people dance. Rooted from latin american influences,
+                    <p className="band-description">Estilo Calico is a local Chicago band with a mission of making people dance. Rooted from latin american influences,
                         Estilo Calico transcends into a new wave.
                     </p>
                     {videoComponents}

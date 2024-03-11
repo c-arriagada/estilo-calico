@@ -104,7 +104,7 @@ li:hover {
     margin-top: 2em;
     margin-left: 2em;
     background-color: rgb(183, 180, 122);
-    max-height: 350px;
+    max-height: 30%;
     font-size: .9em;
     /* font-weight: 400; */
     text-align: justify;
@@ -144,6 +144,47 @@ li:hover {
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+.bio-text {
+    font-family: serif;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1224px) {
+    .bio {
+        width: 50%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .member-bio {
+        margin: 5px;
+        width: 90%;
+        height: 30%;
+        overflow: hidden;
+        overflow-y: scroll;
+        /* justify-content: space-around; */
+        /* align-items: start */
+        /* text-align: center; */
+    }
+
+    .member-photo {
+        margin-top: 3.5em;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .bio-text {
+        margin: 0px;
+    }
+
+    .bio {
+        width: 65%;
+    }
+}
+
 
 .footer {
     position: fixed;
@@ -220,4 +261,81 @@ li:hover {
     flex-direction: column;
     align-items: center;
     padding: 1em;
+}
+
+.band-description {
+    font-family: serif;
+}
+
+@media screen and (max-width: 430px) {
+    .aboutUs {
+        /* display: flex; */
+        /* flex-direction: column; */
+        height: auto;
+    }
+
+    .member-bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px;
+        /* padding: 1em; */
+        width: 95%;
+        box-shadow: none;
+        /* height: 30%; */
+        /* overflow: hidden;
+        overflow-y: scroll; */
+        /* justify-content: space-around; */
+        /* align-items: start */
+        /* text-align: center; */
+    }
+
+    .member-photo {
+        margin-top: 2em;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .bio {
+        width: 90%;
+        margin: 1em;
+    }
+
+    /* .music {
+        margin-bottom: 1em;
+    } */
+
+    .music-content {
+        width: 95%;
+        padding: 0px;
+        overflow: hidden;
+        height: 100%;
+        margin-bottom: .5em;
+        box-shadow: none;
+    }
+
+    .videoCard {
+        width: 95%;
+    }
+
+    video {
+        width: 90%;
+        height: 85%;
+    }
+
+    .contact-form {
+        width: 90%;
+        box-shadow: none;
+    }
+
+    input,
+    textarea {
+        width: 95%;
+    }
+
+    .event-list {
+        height: auto;
+    }
+
 }
