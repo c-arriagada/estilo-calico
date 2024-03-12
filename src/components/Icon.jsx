@@ -7,7 +7,7 @@ function Icon(props) {
 
     return (
         <div className="icon">
-            <SocialIcon url={icon} style={{height: 30, width: 30}}/>
+            <SocialIcon url={icon} className="icon-graphic" style={{ height: 50, width: 50}} />
         </div>
     )
 }
