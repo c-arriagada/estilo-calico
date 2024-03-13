@@ -2,7 +2,6 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Amon from "../assets/images/Amon.jpg";
 import Cuixi from "../assets/images/Cuixi.jpg";
-import Harley from "../assets/images/Harley.jpg";
 import Ryan from "../assets/images/Ryan.jpg";
 import Footer from "../components/Footer";
 

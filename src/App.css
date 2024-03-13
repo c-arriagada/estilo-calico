@@ -237,6 +237,16 @@ li:hover {
     font-family: serif;
 }
 
+.submit-button {
+    border-radius: 3px;
+    background-color: bisque;
+}
+
+.submit-button:hover {
+    background-color: rgb(216, 64, 30);
+    color: white;
+}
+
 @media screen and (max-width: 1224px) {
     .bio {
         width: 50%;

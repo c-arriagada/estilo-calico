@@ -4,14 +4,15 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/main.jsx',
     output: {
-        path: path.join(__dirname, '/dist'),
         publicPath: '/',
+        path: path.join(__dirname, '/dist'),
         filename: 'bundle.js'
     },
     devServer: {
+        historyApiFallback: true,
         static: {
             directory: path.resolve(__dirname, 'dist'),
-            publicPath: '/'
+            publicPath: '/',
         }
     },
     mode: 'development',
@@ -43,7 +44,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
     },
-    
+
 }
