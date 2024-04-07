@@ -4,6 +4,13 @@ const getBios = async() => {
     return bios;
 }
 
+const getVideos = async() => {
+    const response = await fetch('https://app.estilocalico.com/videos')
+    const videos = response.json()
+    return videos;
+}
+
 export {
-    getBios
+    getBios,
+    getVideos
 }

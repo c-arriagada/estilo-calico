@@ -1,42 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import NavBar from "../components/NavBar";
 import VideoCard from "../components/VideoCard";
-
+import {getVideos} from "../client/estilocalico.js"
 
 function Music() {
+  const [videos, setVideos] = useState([]);
 
-    const musicVideos = [
-        "https://www.estilocalico.com/Calle.mp4",
-        "https://www.estilocalico.com/HombreLobo.mp4",
-        "https://www.estilocalico.com/PassionFruit.mp4",
-    ]
+  useEffect(() => {
+    getVideos().then(setVideos);
+  }, []);
 
-    const songs = [
-        "Me Llaman Calle Cover",
-        "Lobo Hombre en Paris Cover",
-        "Passionfruit Cover"
-        ]
+  const videoCards = videos.map((video) => (
+    <VideoCard key={video["id"]} videoObj={video} />
+  ));
 
-    const videoComponents = musicVideos.map((video, i) => <VideoCard source={video} songName={songs[i]}/>)
-    // key={`video + ${i}`}
-
-    return (
-        <>
-            <NavBar />
-            <div className="music">
-                <h1>Music</h1>
-                <div className="music-content">
-                    <p className="band-description">Estilo Calico is a local Chicago band with a mission of making people dance. Rooted from latin american influences,
-                        Estilo Calico transcends into a new wave.
-                    </p>
-                    {videoComponents}
-                    {/* <video width="700px" height="400px" controls >
-                        <source src="https://www.estilocalico.com/Calle.mp4" />
-                    </video> */}
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <NavBar />
+      <div className="music">
+        <h1>Music</h1>
+        <div className="music-content">
+          <p className="band-description">
+            Estilo Calico is a local Chicago band with a mission of making
+            people dance. Rooted from latin american influences, Estilo Calico
+            transcends into a new wave.
+          </p>
+          {videoCards}
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Music;

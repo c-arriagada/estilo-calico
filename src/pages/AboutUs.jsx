@@ -28,12 +28,6 @@ function AboutUs() {
     getBios().then(setBios);
   }, []);
 
-  console.log(bios);
-
-  const displayBios = bios.map((bio) => (
-    <MemberCard key={bio["id"]} bioObj={bio} />
-  ));
-
   return (
     <div>
       <NavBar />
