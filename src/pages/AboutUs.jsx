@@ -8,7 +8,7 @@ const MemberCard = ({ bioObj }) => {
     <article className="member-bio" id={`bio-${bioObj.first_name}`}>
       <img
         loading="lazy"
-        src={bioObj.bio_img}
+        src={`https://www.estilocalico.com/photos/${bioObj.img_pointer}`}
         alt="Amon"
         className="member-photo"
       />
