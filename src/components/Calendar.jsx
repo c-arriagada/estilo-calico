@@ -6,7 +6,7 @@ export default function Calendar() {
     const [events, setEvents] = useState([])
 
     async function getEvents() {
-        const response = await fetch("https://public.estilocalico.com/events");
+        const response = await fetch(`${BACKEND_URL}/events`);
         const data = await response.json()
         return data;
     }
